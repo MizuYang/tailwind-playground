@@ -28,6 +28,17 @@
           />
         </template>
       </SectionContent>
+
+      <SectionContent title="懸停、聚焦、激活 (hover, focus, active)">
+        <template #content>
+          <button
+            type="button"
+            class="rounded-full bg-violet-600 px-3 py-2 text-white hover:bg-violet-600/90 focus:outline-none focus:ring focus:ring-violet-600/60 active:bg-violet-600/85"
+          >
+            嘗試與我互動
+          </button>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
