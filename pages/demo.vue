@@ -68,7 +68,7 @@
         </template>
       </SectionContent>
 
-      <SectionContent title="group">
+      <SectionContent title="group 父層指定子元素吃到樣式">
         <template #content>
           <div class="iten-center flex">
             <a
@@ -84,7 +84,7 @@
         </template>
       </SectionContent>
 
-      <SectionContent title="group/name">
+      <SectionContent title="group/name 父層指定特定子元素吃到樣式">
         <template #content>
           <div class="iten-center flex">
             <div class="group/a me-10">
@@ -117,10 +117,33 @@
               <ul>
                 <li>1</li>
                 <li>2</li>
-                <li class="group-hover/list:bg-sky-600 ">3</li>
+                <li class="group-hover/list:bg-sky-600">3</li>
                 <li>4</li>
               </ul>
             </div>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="peer 兄弟層吃到樣式">
+        <template #content>
+          <div class="flex items-center text-lg">
+            <span class="peer">hover</span>
+            <span class="peer-hover:text-sky-700">我會吃到樣式</span>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="peer/name 兄弟層吃到樣式">
+        <template #content>
+          <div class="flex items-center text-lg">
+            <span class="peer/red me-5">顯示紅色</span>
+            <span class="peer/blue me-5">顯示藍色</span>
+
+            <span class="hidden h-5 w-5 bg-red-300 peer-hover/red:block"></span>
+            <span
+              class="hidden h-5 w-5 bg-blue-300 peer-hover/blue:block"
+            ></span>
           </div>
         </template>
       </SectionContent>
