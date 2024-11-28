@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
+  modules: ['@nuxtjs/tailwindcss'],
+
   // 共用樣式
   css: ['@/style/all.scss']
 })
