@@ -3,16 +3,9 @@
 </script>
 
 <template>
-  <div>
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-      <div class="shrink-0">
-        <img class="size-12" src="https://cdn.wwads.cn/creatives/hb0EDSPzpG3eJdf00yxhImJ49sINAzFZ6Qdg2gVv.png" alt="ChitChat Logo">
-      </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-slate-500">You have a new message!</p>
-      </div>
-    </div>
+  <div class="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+    <h1>首頁</h1>
+    <p>這是研究 Tailwindcss 的修練場</p>
   </div>
 </template>
 
