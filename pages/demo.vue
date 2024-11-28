@@ -4,8 +4,7 @@
 
 <template>
   <div>
-    <Menu />
-    <slot />
+    123
   </div>
 </template>
 
