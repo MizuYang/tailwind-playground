@@ -7,7 +7,7 @@
       link="https://tailwind.nodejs.cn/docs/hover-focus-and-other-states"
     />
 
-    <main>
+    <main class="pb-10">
       <SectionContent title="滑鼠懸停效果(hvoer)">
         <template #content>
           <button
@@ -65,6 +65,63 @@
             placeholder="請輸入文字"
             required
           />
+        </template>
+      </SectionContent>
+
+      <SectionContent title="group">
+        <template #content>
+          <div class="iten-center flex">
+            <a
+              href="javascript:;"
+              class="group bg-violet-400 px-2 py-3 text-lg text-white"
+            >
+              hover 後子元素文字變大
+              <span class="h-30 w-30 block bg-sky-300 group-hover:text-3xl"
+                >子元素</span
+              >
+            </a>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="group/name">
+        <template #content>
+          <div class="iten-center flex">
+            <div class="group/a me-10">
+              <a
+                href="javascript:;"
+                class="block bg-emerald-800 px-2 py-3 text-lg text-white"
+              >
+                hover 後子元素背景色改變
+                <span
+                  class="block h-10 w-20 bg-sky-300 group-hover/a:bg-slate-500"
+                  >子元素</span
+                >
+              </a>
+            </div>
+            <div class="group/b me-10">
+              <a
+                href="javascript:;"
+                class="block bg-emerald-800 px-2 py-3 text-lg text-white"
+              >
+                hover 後子元素背景色改變
+                <span
+                  class="block h-10 w-20 bg-sky-300 group-hover/b:bg-green-500"
+                  >子元素</span
+                >
+              </a>
+            </div>
+
+            <div class="group/list">
+              <h3>hover 我，只有指定的子元素吃的到樣式</h3>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li class="group-hover/list:bg-sky-600 ">3</li>
+                <li>4</li>
+              </ul>
+            </div>
+          </div>
         </template>
       </SectionContent>
     </main>
