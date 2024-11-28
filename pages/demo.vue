@@ -39,6 +39,23 @@
           </button>
         </template>
       </SectionContent>
+      
+      <SectionContent title="first, last, odd, even">
+        <template #content>
+          <ul class="flex *:m-5 *:mt-0 *:p-3">
+            <li class="first:bg-sky-400">1</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">2</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">3</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">4</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">5</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">6</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">7</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">8</li>
+            <li class="odd:bg-red-200 even:bg-slate-200">9</li>
+            <li class="last:bg-red-400">10</li>
+          </ul>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
