@@ -39,7 +39,7 @@
           </button>
         </template>
       </SectionContent>
-      
+
       <SectionContent title="first, last, odd, even">
         <template #content>
           <ul class="flex *:m-5 *:mt-0 *:p-3">
@@ -54,6 +54,17 @@
             <li class="odd:bg-red-200 even:bg-slate-200">9</li>
             <li class="last:bg-red-400">10</li>
           </ul>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="嘗試在輸入框輸入文字(valid, invalid)">
+        <template #content>
+          <input
+            type="text"
+            class="rounded-lg border-gray-300 bg-green-200 px-2 text-2xl ring-4 valid:ring-green-300 invalid:bg-red-200 invalid:ring-red-300 focus:outline-0"
+            placeholder="請輸入文字"
+            required
+          />
         </template>
       </SectionContent>
     </main>
