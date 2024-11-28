@@ -147,6 +147,22 @@
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="has">
+        <template #content>
+          <div class="flex items-center text-lg0">
+
+            <label for="紅色" class="p-2 me-5 has-[:checked]:bg-red-300">
+              紅色
+              <input type="radio" name="select-color" id="紅色" value="紅色" checked>
+            </label>
+            <label for="藍色" class="p-2 has-[:checked]:bg-blue-300">
+              藍色
+              <input type="radio" name="select-color" id="藍色" value="藍色">
+            </label>
+          </div>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
