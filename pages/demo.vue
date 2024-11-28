@@ -18,6 +18,16 @@
           </button>
         </template>
       </SectionContent>
+
+      <SectionContent title="聚焦效果(focus)">
+        <template #content>
+          <input
+            type="text"
+            class="border-grey-700 rounded-md border-2 px-2 text-2xl focus:text-sky-700 focus:outline-violet-500"
+            value="ewgwrgaer"
+          />
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
