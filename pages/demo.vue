@@ -229,6 +229,16 @@
           />
         </template>
       </SectionContent>
+
+      <SectionContent title="ul marker 圓點樣式">
+        <template #content>
+          <ul class="marker:text-red-400 list-disc">
+            <li>測試文字1</li>
+            <li>測試文字2</li>
+            <li>測試文字3</li>
+          </ul>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
