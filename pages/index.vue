@@ -1,5 +1,7 @@
 <script setup>
-
+definePageMeta({
+  title: '首頁'
+})
 </script>
 
 <template>

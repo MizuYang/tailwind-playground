@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  title: '官方核心概念示範'
+})
 const isDark = ref(false);
 
 const btnName = computed(() => `${isDark.value ? "白天" : "黑暗"}模式`);
