@@ -255,6 +255,14 @@
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="first-letter, first-line">
+        <template #content>
+          <div>
+            <p class="first-letter:text-6xl first-letter:text-violet-700 first-line:bg-yellow-500/30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum magnam aliquam debitis laudantium culpa, consectetur impedit a veritatis ut natus possimus sapiente vel placeat porro hic dolorem? Quo, repudiandae.</p>
+          </div>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
