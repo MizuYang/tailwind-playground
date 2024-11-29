@@ -10,14 +10,21 @@ const menuList = ref([
     title: "官方核心概念示範",
     path: "/demo",
   },
+  {
+    name: "responsive-design",
+    title: "響應式設計",
+    path: "/responsive-design",
+  },
 ]);
 </script>
 
 <template>
   <nav class="sticky top-0 w-full bg-sky-200 px-10">
-    <ul class="flex items-center">
+    <ul class="relative flex items-center">
       <template v-for="menu in menuList" :key="menu.name">
-        <li class="py-3 pe-5 text-xl text-slate-500 first:pe-10">
+        <li
+          class="mb-3 me-5 border-b-4 pt-3 text-xl text-slate-500 first:me-10 border-solid hover:border-red-300 border-transparent transition-all"
+        >
           <NuxtLink :to="menu.path" active-class="active">
             {{ menu.title }}
           </NuxtLink>
