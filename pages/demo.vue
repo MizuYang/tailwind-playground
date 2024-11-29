@@ -342,6 +342,21 @@ function darkModeToggle() {
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="自定義任意值">
+        <template #content>
+          <div class="[&_p]:text-violet-600">
+            <h3 class="mb-2">底下所有 p 標籤文字顏色都會變成紫色</h3>
+            <p>Lorem ipsum...</p>
+            <ul>
+              <li>
+                <p>Lorem ipsum...</p>
+              </li>
+            </ul>
+          </div>
+        </template>
+      </SectionContent>
+
     </main>
   </div>
 </template>
