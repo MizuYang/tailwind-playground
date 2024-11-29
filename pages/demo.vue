@@ -1,7 +1,7 @@
 <script setup>
 definePageMeta({
-  title: '官方核心概念示範'
-})
+  title: "官方核心概念示範",
+});
 const isDark = ref(false);
 
 const btnName = computed(() => `${isDark.value ? "白天" : "黑暗"}模式`);
@@ -287,19 +287,19 @@ function darkModeToggle() {
         <template #content>
           <ul class="flex flex-wrap gap-3">
             <li
-              class="h-5 w-80 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
+              class="h-5 w-20 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
             ></li>
             <li
-              class="h-5 w-80 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
+              class="h-5 w-20 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
             ></li>
             <li
-              class="h-5 w-80 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
+              class="h-5 w-20 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
             ></li>
             <li
-              class="h-5 w-80 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
+              class="h-5 w-20 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
             ></li>
             <li
-              class="h-5 w-80 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
+              class="h-5 w-20 bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400"
             ></li>
           </ul>
         </template>
@@ -359,7 +359,6 @@ function darkModeToggle() {
           </div>
         </template>
       </SectionContent>
-
     </main>
   </div>
 </template>
