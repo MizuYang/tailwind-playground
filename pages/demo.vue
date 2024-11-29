@@ -232,11 +232,27 @@
 
       <SectionContent title="ul marker 圓點樣式">
         <template #content>
-          <ul class="marker:text-red-400 list-disc">
+          <ul class="list-disc marker:text-red-400">
             <li>測試文字1</li>
             <li>測試文字2</li>
             <li>測試文字3</li>
           </ul>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="selection">
+        <template #content>
+          <div class="text-lg">
+            <h3>嘗試選取下面的文字</h3>
+            <p
+              class="selection:bg-violet-700/30 selection:font-black selection:text-violet-700"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              labore ducimus non magnam unde, accusamus nesciunt blanditiis,
+              amet fugit aliquam iste alias error sapiente dolorem maiores
+              necessitatibus commodi aliquid eveniet?
+            </p>
+          </div>
         </template>
       </SectionContent>
     </main>
