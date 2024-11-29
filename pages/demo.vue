@@ -150,16 +150,36 @@
 
       <SectionContent title="has">
         <template #content>
-          <div class="flex items-center text-lg0">
-
-            <label for="紅色" class="p-2 me-5 has-[:checked]:bg-red-300">
+          <div class="text-lg0 flex items-center">
+            <label for="紅色" class="me-5 p-2 has-[:checked]:bg-red-300">
               紅色
-              <input type="radio" name="select-color" id="紅色" value="紅色" checked>
+              <input
+                type="radio"
+                name="select-color"
+                id="紅色"
+                value="紅色"
+                checked
+              />
             </label>
             <label for="藍色" class="p-2 has-[:checked]:bg-blue-300">
               藍色
-              <input type="radio" name="select-color" id="藍色" value="藍色">
+              <input type="radio" name="select-color" id="藍色" value="藍色" />
             </label>
+
+            <div
+              class="ms-5 flex items-center text-sky-600 has-[:user-invalid]:text-red-600 has-[:valid]:text-green-600"
+            >
+              <label for="input-text-change-color">
+                請在輸入框輸入文字
+                <input
+                  type="text"
+                  class="border-2 border-gray-500"
+                  id="input-text-change-color"
+                  placeholder="請輸入文字"
+                  required
+                />
+              </label>
+            </div>
           </div>
         </template>
       </SectionContent>
