@@ -183,8 +183,59 @@
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="::before, ::after">
+        <template #content>
+          <label class="block">
+            <span
+              class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+            >
+              Email
+            </span>
+            <input
+              type="email"
+              name="email"
+              class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm"
+              placeholder="you@example.com"
+            />
+          </label>
+
+          <div class="mt-5">
+            <p>
+              這個文字有
+              <span class="text-color-skewY">背景顏色</span>
+              而且還有旋轉角度
+            </p>
+
+            <br />
+
+            <p>
+              這個文字有
+              <span class="relative p-1 before:bg-sky-800/40 before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:-skew-y-6">背景顏色</span>
+              而且還有旋轉角度
+            </p>
+          </div>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
 
-<style lang="scss" scope></style>
+<style lang="scss" scope>
+.text-color-skewY {
+  position: relative;
+  padding: 3px 6px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.361);
+    display: inline-block;
+    transform: skewY(-6deg); /* 旋轉角度 */
+  }
+}
+</style>
