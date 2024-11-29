@@ -259,8 +259,27 @@
       <SectionContent title="first-letter, first-line">
         <template #content>
           <div>
-            <p class="first-letter:text-6xl first-letter:text-violet-700 first-line:bg-yellow-500/30">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus eum magnam aliquam debitis laudantium culpa, consectetur impedit a veritatis ut natus possimus sapiente vel placeat porro hic dolorem? Quo, repudiandae.</p>
+            <p
+              class="first-letter:text-6xl first-letter:text-violet-700 first-line:bg-yellow-500/30"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus eum magnam aliquam debitis laudantium culpa,
+              consectetur impedit a veritatis ut natus possimus sapiente vel
+              placeat porro hic dolorem? Quo, repudiandae.
+            </p>
           </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="響應式斷點: sm, md, lg, xl, 2xl">
+        <template #content>
+          <ul class="flex flex-wrap gap-3">
+            <li class="bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400 w-80 h-5"></li>
+            <li class="bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400 w-80 h-5"></li>
+            <li class="bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400 w-80 h-5"></li>
+            <li class="bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400 w-80 h-5"></li>
+            <li class="bg-gray-300 sm:bg-sky-300 md:bg-yellow-300 lg:bg-green-300 xl:bg-red-300 2xl:bg-violet-400 w-80 h-5"></li>
+          </ul>
         </template>
       </SectionContent>
     </main>
