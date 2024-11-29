@@ -184,7 +184,7 @@
         </template>
       </SectionContent>
 
-      <SectionContent title="::before, ::after">
+      <SectionContent title="::before, ::after 偽元素">
         <template #content>
           <label class="block">
             <span
@@ -211,10 +211,22 @@
 
             <p>
               這個文字有
-              <span class="relative p-1 before:bg-sky-800/40 before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:-skew-y-6">背景顏色</span>
+              <span
+                class="relative p-1 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:-skew-y-6 before:bg-sky-800/40"
+                >背景顏色</span
+              >
               而且還有旋轉角度
             </p>
           </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="file 元素樣式">
+        <template #content>
+          <input
+            type="file"
+            class="cursor-pointer file:cursor-pointer file:rounded-full file:border-none file:bg-violet-300 file:p-3 file:text-violet-800 file:hover:bg-violet-400"
+          />
         </template>
       </SectionContent>
     </main>
