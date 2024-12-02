@@ -5,7 +5,6 @@ onMounted(async () => {
       "~/utils/StarFieldCanvas.client.js"
     );
 
-    console.log("StarFieldCanvas: ", StarFieldCanvas);
     // const canvas = new StarFieldCanvas(someParameter);
 
     /**
@@ -63,8 +62,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <canvas id="space"></canvas>
   <div>
+    <canvas id="space"></canvas>
     <Menu />
     <div
       class="container m-auto bg-white my-10 px-10 py-10"
