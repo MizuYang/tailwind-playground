@@ -23,6 +23,18 @@ definePageMeta({
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="max-width">
+        <template #content>
+          <div class="flex max-md:flex-col ring-2 ring-sky-700 rounded">
+            <div><img src='https://picsum.photos/500/300' class="block w-full max-md:h-36 h-full"></div>
+            <div class="flex justify-center flex-col p-5">
+              <h2 class="mb-2">測試標題</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus, facilis id veritatis soluta ex fuga eaque? Illum praesentium ullam vero similique consequuntur hic.</p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
