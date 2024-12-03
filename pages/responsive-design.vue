@@ -14,11 +14,21 @@ definePageMeta({
     <main class="pb-10">
       <SectionContent title="min-width">
         <template #content>
-          <div class="md:flex ring-2 ring-sky-700 rounded">
-            <div><img src='https://picsum.photos/500/300' class="block w-full h-36 md:h-full"></div>
-            <div class="flex justify-center flex-col p-5">
+          <div class="rounded ring-2 ring-sky-700 md:flex">
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-36 w-full md:h-full"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
               <h2 class="mb-2">測試標題</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus, facilis id veritatis soluta ex fuga eaque? Illum praesentium ullam vero similique consequuntur hic.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
             </div>
           </div>
         </template>
@@ -26,11 +36,45 @@ definePageMeta({
 
       <SectionContent title="max-width">
         <template #content>
-          <div class="flex max-md:flex-col ring-2 ring-sky-700 rounded">
-            <div><img src='https://picsum.photos/500/300' class="block w-full max-md:h-36 h-full"></div>
-            <div class="flex justify-center flex-col p-5">
+          <div class="flex rounded ring-2 ring-sky-700 max-md:flex-col">
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-full w-full max-md:h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
               <h2 class="mb-2">測試標題</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus, facilis id veritatis soluta ex fuga eaque? Illum praesentium ullam vero similique consequuntur hic.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="min-width and max-width">
+        <template #content>
+          <div
+            class="flex rounded bg-sky-300 ring-2 ring-sky-700 max-md:flex-col sm:max-md:bg-sky-400 md:max-lg:bg-sky-500 lg:max-xl:bg-sky-600 xl:max-2xl:bg-sky-700 2xl:bg-sky-800"
+          >
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-full w-full max-md:h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">測試標題</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
             </div>
           </div>
         </template>
