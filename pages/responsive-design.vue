@@ -79,6 +79,31 @@ definePageMeta({
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="自訂斷點">
+        <template #content>
+          <div
+            class="flex rounded ipadPortrait:bg-violet-400 ipadLandscape:bg-violet-300 bg-violet-200"
+          >
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block object-cover w-36 h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">控制瀏覽器大小後, 觀察背景顏色的變化</h2>
+              <p>
+                <!-- iPad 橫式 -->
+                'ipadPortrait': '1024px' <br />
+                <!-- iPad 直式 -->
+                'ipadLandscape': '768px' <br />
+              </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
     </main>
   </div>
 </template>
