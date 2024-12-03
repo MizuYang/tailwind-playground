@@ -12,31 +12,98 @@ definePageMeta({
     />
 
     <main class="pb-10">
-      <SectionContent title="響應式卡片">
+      <SectionContent title="min-width">
         <template #content>
-          <div
-            class="w-1/2 items-center rounded-xl ring-1 ring-violet-600 lg:flex lg:rounded-l-xl"
-          >
-            <div
-              class="overflow-hidden rounded-t-xl object-cover lg:shrink-0 lg:rounded-none lg:rounded-l-xl"
-            >
+          <div class="rounded ring-2 ring-sky-700 md:flex">
+            <div>
               <img
-                src="http://placehold.it/100x100/000/fff/?text=xDDDD"
-                class="block h-full w-full object-cover lg:h-auto lg:w-auto"
+                src="https://picsum.photos/500/300"
+                class="block h-36 w-full md:h-full"
               />
             </div>
-            <div class="lg:shrink-0">
-              <div class="w-1/2 px-5 py-3">
-                <h2>標題</h2>
-                <p class="overflow-wrap break-words">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-                  quae commodi repellat, minima maxime labore qui, optio,
-                </p>
-              </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">測試標題</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
             </div>
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="max-width">
+        <template #content>
+          <div class="flex rounded ring-2 ring-sky-700 max-md:flex-col">
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-full w-full max-md:h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">測試標題</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="min-width and max-width">
+        <template #content>
+          <div
+            class="flex rounded bg-sky-300 ring-2 ring-sky-700 max-md:flex-col sm:max-md:bg-sky-400 md:max-lg:bg-sky-500 lg:max-xl:bg-sky-600 xl:max-2xl:bg-sky-700 2xl:bg-sky-800"
+          >
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-full w-full max-md:h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">測試標題</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Placeat ipsa dicta facere aliquid amet quibusdam voluptatibus,
+                facilis id veritatis soluta ex fuga eaque? Illum praesentium
+                ullam vero similique consequuntur hic.
+              </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="自訂斷點">
+        <template #content>
+          <div
+            class="flex rounded ipadPortrait:bg-violet-400 ipadLandscape:bg-violet-300 bg-violet-200"
+          >
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block object-cover w-36 h-36"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">控制瀏覽器大小後, 觀察背景顏色的變化</h2>
+              <p>
+                <!-- iPad 橫式 -->
+                'ipadPortrait': '1024px' <br />
+                <!-- iPad 直式 -->
+                'ipadLandscape': '768px' <br />
+              </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
     </main>
   </div>
 </template>
