@@ -83,12 +83,12 @@ definePageMeta({
       <SectionContent title="自訂斷點">
         <template #content>
           <div
-            class="flex rounded ipadPortrait:bg-violet-400 ipadLandscape:bg-violet-300 bg-violet-200"
+            class="flex rounded bg-violet-200 ipadLandscape:bg-violet-300 ipadPortrait:bg-violet-400"
           >
             <div>
               <img
                 src="https://picsum.photos/500/300"
-                class="block object-cover w-36 h-36"
+                class="block h-36 w-36 object-cover"
               />
             </div>
             <div class="flex flex-col justify-center p-5">
@@ -103,7 +103,6 @@ definePageMeta({
           </div>
         </template>
       </SectionContent>
-
     </main>
   </div>
 </template>
