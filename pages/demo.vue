@@ -6,10 +6,19 @@ const isDark = ref(false);
 
 const btnName = computed(() => `${isDark.value ? "白天" : "黑暗"}模式`);
 
-function darkModeToggle() {
+function darkModeToggleByClassName() {
   document.documentElement.classList.toggle("dark");
   isDark.value = document.documentElement.className.includes("dark");
 }
+// function darkModeToggleByDataset() {
+//   if (isDark.value) {
+//     document.documentElement.removeAttribute('data-mode')
+//     isDark.value = false
+//   } else {
+//     document.documentElement.setAttribute('data-mode', 'dark')
+//     isDark.value = true
+//   }
+// }
 </script>
 
 <template>
@@ -310,10 +319,22 @@ function darkModeToggle() {
           <button
             type="button"
             class="mb-5 rounded-lg bg-violet-300 px-3 py-2 text-violet-900 dark:bg-violet-700 dark:text-violet-300"
-            @click="darkModeToggle"
+            @click="darkModeToggleByClassName"
           >
             {{ btnName }}
           </button>
+
+          <!-- <br />
+
+          在 <code class="text-red-400">{{'<html>'}}</code>加上 <code class="text-red-400">data-mode="dark"</code> =>
+          <button
+            type="button"
+            class="mb-5 rounded-lg bg-violet-300 px-3 py-2 text-violet-900 dark:bg-violet-700 dark:text-violet-300"
+            @click="darkModeToggleByDataset"
+          >
+            {{ btnName }}
+          </button> -->
+
           <div
             class="rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800"
           >
