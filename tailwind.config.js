@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   // 在 html 標籤上加上 .dark 就會啟用暗色模式
-  darkMode: "selector", 
+  darkMode: "selector",
   // 在 html 標籤上加上 data-mode="dark" 就會啟用暗色模式
   // darkMode: ["selector", '[data-mode="dark"]'],
-  
-  content: ["./src/**/*.{html,js}"],
+
+  content: ["./src/**/*.{vue,js,ts,jsx,tsx,html}"],
+
   theme: {
     extend: {
       screens: {

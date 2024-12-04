@@ -1,0 +1,7 @@
+// 用來示範 pages\functions-and-directives.vue 的 @apply box-style ，若CSS中的 @apply 與類名樣式是不同支檔案就會造成錯誤
+.box-style {
+  font-size: 20px;
+  color: red;
+  font-weight: 900;
+  text-decoration: dotted;
+}

@@ -22,6 +22,17 @@
           </div>
         </template>
       </SectionContent>
+
+      <SectionContent title="透過 @apply 提取整個類名">
+        <template #content>
+          <div class="card2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            possimus perspiciatis reiciendis minima corporis! Aperiam dolorem,
+            culpa eum incidunt odio magnam quidem iste et, sequi laudantium
+            maxime temporibus neque! Ad.
+          </div>
+        </template>
+      </SectionContent>
     </main>
   </div>
 </template>
@@ -29,11 +40,6 @@
 <style lang="scss" scope>
 @tailwind components;
 
-@layer components {
-  .btn-primary {
-    @apply rounded-lg bg-violet-600 px-3 py-2 text-white transition-all hover:rounded-none hover:bg-violet-500 #{!important};
-  }
-}
 /** 測試 !important 可覆蓋此樣式 */
 .test {
   background-color: pink;
@@ -57,9 +63,16 @@
 .card-spacing {
   padding: 20px 30px;
 }
+
 @layer components {
+  .btn-primary {
+    @apply rounded-lg bg-violet-600 px-3 py-2 text-white transition-all hover:rounded-none hover:bg-violet-500 #{!important};
+  }
   .card {
     @apply card-theme-dark card-content card-spacing;
+  }
+  .box {
+    // @apply box-style;
   }
 }
 </style>
