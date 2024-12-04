@@ -7,7 +7,13 @@ export default {
   // 在 html 標籤上加上 data-mode="dark" 就會啟用暗色模式
   // darkMode: ["selector", '[data-mode="dark"]'],
 
-  content: ["./src/**/*.{vue,js,ts,jsx,tsx,html}"],
+  /**
+   * https://www.tailwindcss.cn/docs/content-configuration#configuring-source-paths
+   */
+  content: [
+    "./pages/**/*.{vue,js,ts,jsx,tsx,html}",
+    "./components/**/*.{vue,js,ts,jsx,tsx,html}",
+  ],
 
   // important: true, // 將所有樣式設定為 !important
 
