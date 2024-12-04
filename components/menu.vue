@@ -20,6 +20,11 @@ const menuList = ref([
     title: "函數和指令",
     path: "/functions-and-directives",
   },
+  {
+    name: "adding-custom-styles",
+    title: "客製化自訂樣式",
+    path: "/adding-custom-styles",
+  },
 ]);
 </script>
 

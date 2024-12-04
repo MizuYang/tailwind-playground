@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  // prefix: 'tw-',
+
   // 在 html 標籤上加上 .dark 就會啟用暗色模式
   darkMode: "selector",
   // 在 html 標籤上加上 data-mode="dark" 就會啟用暗色模式
@@ -16,6 +18,12 @@ export default {
         // iPad 直式
         ipadLandscape: "768px",
       },
+
+      // 自訂顏色
+      colors: {
+        "happy": "orange",
+        "unhappy": "grey",
+      }
     },
 
     // 自訂斷點(會覆蓋掉預設的斷點)
