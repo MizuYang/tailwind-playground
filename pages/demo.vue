@@ -369,7 +369,7 @@ function darkModeToggleByClassName() {
 
       <SectionContent title="自定義任意值">
         <template #content>
-          <div class="[&_p]:text-violet-600 mb-5">
+          <div class="mb-5 [&_p]:text-violet-600">
             <h3 class="mb-2">
               底下所有 p 標籤文字顏色都會變成紫色
               <code class="text-sm text-red-600">：[&_p]:text-violet-600</code>
@@ -385,20 +385,32 @@ function darkModeToggleByClassName() {
           <div class="mb-5">
             <h3 class="mb-2">
               這是個 寬度 87px 高度 23px 的區塊：
-              <code class="text-sm text-red-600">w-[87px] h-[23px] bg-sky-400</code>
+              <code class="text-sm text-red-600"
+                >w-[87px] h-[23px] bg-sky-400</code
+              >
             </h3>
-            <div class="w-[87px] h-[23px] bg-sky-400"></div>
+            <div class="h-[23px] w-[87px] bg-sky-400"></div>
           </div>
-          
-          <div>
+
+          <div class="mb-5">
             <h3 class="mb-2">
-              這是個寬度 27px、高度 34px 的區塊，當滑鼠懸停在上方時，背景顏色會變更為指定的顏色。 <br />
-              <code class="text-sm text-red-600">bg-sky-400 hover:bg-[#797979] w-[27px] h-[34px]</code>
+              這是個寬度 27px、高度 34px
+              的區塊，當滑鼠懸停在上方時，背景顏色會變更為指定的顏色。 <br />
+              <code class="text-sm text-red-600"
+                >bg-sky-400 hover:bg-[#797979] w-[27px] h-[34px]</code
+              >
             </h3>
             <div class="flex">
-              <div class="bg-sky-400 hover:bg-[#797979] hover:mr-[33px] w-[27px] h-[34px]"></div>
-              <div class="bg-red-400 hover:bg-[#6666] w-[27px] h-[34px]"></div>
+              <div
+                class="h-[34px] w-[27px] bg-sky-400 hover:mr-[33px] hover:bg-[#797979]"
+              ></div>
+              <div class="h-[34px] w-[27px] bg-red-400 hover:bg-[#6666]"></div>
             </div>
+          </div>
+
+          <div>
+            <h3 class="mb-2">在任意值中使用 CSS 變數</h3>
+            <p class="bg-[--bg-mizu]">123456</p>
           </div>
         </template>
       </SectionContent>
@@ -407,6 +419,9 @@ function darkModeToggleByClassName() {
 </template>
 
 <style lang="scss" scope>
+:root {
+  --bg-mizu: rgb(206, 70, 251);
+}
 .text-color-skewY {
   position: relative;
   padding: 3px 6px;
