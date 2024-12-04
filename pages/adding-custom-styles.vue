@@ -15,6 +15,15 @@
         </div>
       </template>
     </SectionContent>
+
+    <SectionContent title="自訂間距">
+      <template #content>
+        <div class="flex">
+          <p class="mr-mizu-spacing bg-sky-300 p-5"></p>
+          <p class="bg-red-300 p-5"></p>
+        </div>
+      </template>
+    </SectionContent>
   </div>
 </template>
 

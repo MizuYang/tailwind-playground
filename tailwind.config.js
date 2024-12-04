@@ -23,6 +23,10 @@ export default {
       colors: {
         "happy": "orange",
         "unhappy": "grey",
+      },
+
+      spacing : {
+        "mizu-spacing": '87px'
       }
     },
 
