@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  // prefix: 'tw-',
+  // prefix: 'tw-', // 將所有樣式設定的 class 前綴為 tw-
 
   // 在 html 標籤上加上 .dark 就會啟用暗色模式
   darkMode: "selector",
@@ -8,6 +8,8 @@ export default {
   // darkMode: ["selector", '[data-mode="dark"]'],
 
   content: ["./src/**/*.{vue,js,ts,jsx,tsx,html}"],
+
+  // important: true, // 將所有樣式設定為 !important
 
   theme: {
     extend: {
