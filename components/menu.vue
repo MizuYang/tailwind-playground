@@ -15,6 +15,11 @@ const menuList = ref([
     title: "響應式設計",
     path: "/responsive-design",
   },
+  {
+    name: "functions-and-directives",
+    title: "函數和指令",
+    path: "/functions-and-directives",
+  },
 ]);
 </script>
 
