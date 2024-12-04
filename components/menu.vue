@@ -25,6 +25,11 @@ const menuList = ref([
     title: "客製化自訂樣式",
     path: "/adding-custom-styles",
   },
+  {
+    name: "playground",
+    title: "修練場",
+    path: "/playground",
+  },
 ]);
 </script>
 

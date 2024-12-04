@@ -7,7 +7,7 @@ const props = defineProps({
   },
   link: {
     type: String,
-    required: true,
+    // required: true,
     default: "",
   },
 });
@@ -16,11 +16,16 @@ const { title, link } = props;
 </script>
 
 <template>
-  <h1 class="mb-10">
-    <a :href="link" class="text-2xl font-bold text-sky-600" target="_blank">
-      <!-- 官方核心概念示範 -->
+  <h1 class="mb-10 text-2xl font-bold text-sky-600">
+    <template v-if="link">
+      <a :href="link" target="_blank">
+        <!-- 官方核心概念示範 -->
+        {{ title }}
+      </a>
+    </template>
+    <template v-else>
       {{ title }}
-    </a>
+    </template>
   </h1>
 </template>
 
