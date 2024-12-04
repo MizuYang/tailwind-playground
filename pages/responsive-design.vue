@@ -83,7 +83,7 @@ definePageMeta({
       <SectionContent title="自訂斷點">
         <template #content>
           <div
-            class="flex rounded bg-violet-200 ipadLandscape:bg-violet-300 ipadPortrait:bg-violet-400"
+            class="ipadLandscape:bg-violet-300 ipadPortrait:bg-violet-400 flex rounded bg-violet-200"
           >
             <div>
               <img
@@ -99,6 +99,25 @@ definePageMeta({
                 <!-- iPad 直式 -->
                 'ipadLandscape': '768px' <br />
               </p>
+            </div>
+          </div>
+        </template>
+      </SectionContent>
+
+      <SectionContent title="斷點任意值">
+        <template #content>
+          <div
+            class="flex rounded min-[300px]:bg-sky-300 min-[400px]:bg-violet-300 min-[500px]:bg-green-300 min-[600px]:bg-red-300 min-[700px]:bg-orange-300 min-[800px]:bg-yellow-300 min-[900px]:bg-lime-300 min-[1000px]:bg-teal-300 min-[1100px]:bg-rose-300"
+          >
+            <div>
+              <img
+                src="https://picsum.photos/500/300"
+                class="block h-36 w-36 object-cover"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-5">
+              <h2 class="mb-2">控制瀏覽器大小後, 觀察背景顏色的變化</h2>
+              <p>300-1100 間每100px 都會有不同的背景顏色</p>
             </div>
           </div>
         </template>
