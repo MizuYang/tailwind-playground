@@ -1,6 +1,9 @@
 <script setup>
-const curStyleType = ref("a");
+definePageMeta({
+  title: "客製化自訂樣式",
+});
 
+const curStyleType = ref("a");
 const dynamicStyle = ref({
   a: "bg-orange-300 rounded-sm p-5",
   b: "bg-lime-300 rounded-lg rotated-sm p-5",

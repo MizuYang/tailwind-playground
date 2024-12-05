@@ -1,4 +1,6 @@
 <script setup>
+const { playgroundLastPath } = storeToRefs(useMenuStore());
+
 const menuList = ref([
   {
     name: "hoem",
@@ -28,9 +30,10 @@ const menuList = ref([
   {
     name: "playground",
     title: "修練場",
-    path: "/playground",
+    path: `/playground/${playgroundLastPath.value}`,
   },
 ]);
+
 </script>
 
 <template>
@@ -38,7 +41,7 @@ const menuList = ref([
     <ul class="relative flex items-center">
       <template v-for="menu in menuList" :key="menu.name">
         <li
-          class="mb-3 me-5 border-b-4 pt-3 text-xl text-slate-500 first:me-10 border-solid hover:border-red-300 border-transparent transition-all"
+          class="mb-3 me-5 border-b-4 border-solid border-transparent pt-3 text-xl text-slate-500 transition-all first:me-10 hover:border-red-300"
         >
           <NuxtLink :to="menu.path" active-class="active">
             {{ menu.title }}

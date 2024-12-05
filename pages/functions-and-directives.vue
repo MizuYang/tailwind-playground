@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+definePageMeta({
+  title: "函數和指令",
+});
+</script>
 
 <template>
   <div>
@@ -25,7 +29,7 @@
 
       <SectionContent title="透過 @apply 使用 tailwind 樣式">
         <template #content>
-          <h2 class="text-red-500 mb-3">@apply bg-sky-300 w-10 h-10;</h2>
+          <h2 class="mb-3 text-red-500">@apply bg-sky-300 w-10 h-10;</h2>
           <div class="area"></div>
         </template>
       </SectionContent>
@@ -73,6 +77,6 @@
 }
 
 .area {
-  @apply bg-sky-300 w-10 h-10;
+  @apply h-10 w-10 bg-sky-300;
 }
 </style>
