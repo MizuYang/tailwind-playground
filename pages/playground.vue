@@ -1,15 +1,11 @@
 <script setup>
-if (import.meta.client) {
-}
 definePageMeta({
   middleware: (to, from) => {
     if (import.meta.client) {
       const { setLastPath } = useMenuStore();
-      console.log(setLastPath);
       const pagePath = to.fullPath.split("/").at(-1);
-      console.log(pagePath);
-      // setLastPath(pagePath);
-      // localStorage?.setItem("playgroundLastPath", JSON.stringify(pagePath));
+      setLastPath(pagePath);
+      localStorage?.setItem("playgroundLastPath", JSON.stringify(pagePath));
     }
   },
 });
@@ -24,15 +20,6 @@ const playgroundPagesName = ref([
   },
 ]);
 
-// https://www.figma.com/community/plugin/735452896889481850/android-resources-export
-
-
-// function recordCurrentPage() {
-//   if (process.server) return;
-//   const route = useRoute();
-//   console.log("route: ", route);
-//   localStorage?.setItem("playgroundLastPath", JSON.stringify(pagePath));
-// }
 </script>
 
 <template>

@@ -1,27 +1,24 @@
 import { defineStore } from "pinia";
 
 export const useMenuStore = defineStore("useMenuStore", () => {
-  // const playgroundLastPath = computed(() => {
-  //   if (process.server) return "flex";
-  //   return JSON.parse(localStorage?.getItem("playgroundLastPath")) || "flex";
-  // });
-
   const playgroundLastPath = ref("");
 
-  if (import.meta.client) {
-    playgroundLastPath.value =
-      JSON.parse(localStorage?.getItem("playgroundLastPath")) || "flex";
-  }
-
-  function setLastPath(path) {
-    playgroundLastPath.value = path;
+  function getLastPath() {
     if (import.meta.client) {
+      playgroundLastPath.value =
+        JSON.parse(localStorage?.getItem("playgroundLastPath")) || "flex";
+    }
+  }
+  function setLastPath(path) {
+    if (import.meta.client) {
+      playgroundLastPath.value = path;
       localStorage.setItem("playgroundLastPath", JSON.stringify(path));
     }
   }
 
   return {
     playgroundLastPath,
+    getLastPath,
     setLastPath,
   };
 });

@@ -1,7 +1,8 @@
 <script setup>
+const { getLastPath } = useMenuStore()
 const { playgroundLastPath } = storeToRefs(useMenuStore());
 
-const menuList = ref([
+const menuList = computed(() => [
   {
     name: "hoem",
     title: "首頁",
@@ -34,6 +35,9 @@ const menuList = ref([
   },
 ]);
 
+onMounted(() => {
+  getLastPath()
+})
 </script>
 
 <template>
@@ -43,9 +47,11 @@ const menuList = ref([
         <li
           class="mb-3 me-5 border-b-4 border-solid border-transparent pt-3 text-xl text-slate-500 transition-all first:me-10 hover:border-red-300"
         >
-          <NuxtLink :to="menu.path" active-class="active">
-            {{ menu.title }}
-          </NuxtLink>
+          <ClientOnly>
+            <NuxtLink :to="menu.path" active-class="active">
+              {{ menu.title }}
+            </NuxtLink>
+          </ClientOnly>
         </li>
       </template>
       <li class="ms-auto text-xl italic text-gray-500">
