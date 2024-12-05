@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  title: "Flex",
+});
 const flexBtn = ref([
   "flex-row",
   "flex-row-reverse",
@@ -72,6 +75,20 @@ const flexWraoClassName = ref(flexWrapBtn.value[0]);
             <template v-for="i in 8">
               <li class="box !w-[350px]">{{ i }}</li>
             </template>
+          </ul>
+        </div>
+
+        <!-- flex: 1; flex: auto; flex: none; -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">
+            flex: 1; flex: auto; flex: none;
+          </h3>
+          <ul class="flex gap-3" :class="flexWraoClassName">
+            <li class="box flex-1">flex-1</li>
+            <li class="box flex-[2]">flex-[2]</li>
+            <li class="box flex-[3]">flex-[3]</li>
+            <li class="box flex-auto">flex-auto</li>
+            <li class="box flex-none">flex-none</li>
           </ul>
         </div>
       </template>
