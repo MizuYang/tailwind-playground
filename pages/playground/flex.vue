@@ -9,7 +9,6 @@ const flexBtn = ref([
   "flex-col-reverse",
 ]);
 const flexDirectionClassName = ref(flexBtn.value[0]);
-
 const flexWrapBtn = ref(["flex-wrap", "flex-wrap-reverse", "flex-nowrap"]);
 const flexWraoClassName = ref(flexWrapBtn.value[0]);
 </script>
@@ -83,12 +82,26 @@ const flexWraoClassName = ref(flexWrapBtn.value[0]);
           <h3 class="mb-3 text-red-700">
             flex: 1; flex: auto; flex: none;
           </h3>
-          <ul class="flex gap-3" :class="flexWraoClassName">
+          <ul class="flex gap-3">
             <li class="box flex-1">flex-1</li>
             <li class="box flex-[2]">flex-[2]</li>
             <li class="box flex-[3]">flex-[3]</li>
             <li class="box flex-auto">flex-auto</li>
             <li class="box flex-none">flex-none</li>
+          </ul>
+        </div>
+
+        <!-- order -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">
+            order
+          </h3>
+          <ul class="flex gap-3">
+            <li class="box order-3">order-3</li>
+            <li class="box order-1">order-1</li>
+            <li class="box order-2">order-2</li>
+            <li class="box order-firsts">order-first</li>
+            <li class="box order-last">order-last</li>
           </ul>
         </div>
       </template>
