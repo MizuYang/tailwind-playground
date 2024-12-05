@@ -6,6 +6,14 @@ const flexBtn = ref([
   "flex-col-reverse",
 ]);
 const flexDirectionClassName = ref(flexBtn.value[0]);
+
+const flexWrapBtn = ref([
+  "flex-wrap",
+  "flex-wrap-reverse",
+  "flex-nowrap",
+]);
+const flexWraoClassName = ref(flexWrapBtn.value[0]);
+
 </script>
 
 <template>
@@ -23,10 +31,10 @@ const flexDirectionClassName = ref(flexBtn.value[0]);
           </ul>
         </div>
 
+        <!-- 彈性方向 -->
         <div class="mb-3">
           <h3 class="mb-3 text-red-700">flex 彈性方向：{{ flexDirectionClassName }}</h3>
 
-          <!-- flex 方向按鈕 -->
           <template v-for="btnDirectionName in flexBtn" :key="btnDirectionName">
             <button
               type="button"
@@ -40,6 +48,27 @@ const flexDirectionClassName = ref(flexBtn.value[0]);
           <ul class="flex gap-3" :class="flexDirectionClassName">
             <template v-for="i in 5">
               <li class="box">{{ i }}</li>
+            </template>
+          </ul>
+        </div>
+
+        <!-- 彈性換行 -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">flex 彈性換行：{{ flexWraoClassName }}</h3>
+
+          <template v-for="btnDirectionName in flexWrapBtn" :key="btnDirectionName">
+            <button
+              type="button"
+              class="mb-5 me-2 inline-block bg-gray-300 p-1"
+              @click="flexWraoClassName = btnDirectionName"
+            >
+              {{ btnDirectionName }}
+            </button>
+          </template>
+
+          <ul class="flex gap-3" :class="flexWraoClassName">
+            <template v-for="i in 8">
+              <li class="box !w-[350px]">{{ i }}</li>
             </template>
           </ul>
         </div>

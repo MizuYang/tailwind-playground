@@ -7,7 +7,6 @@ const props = defineProps({
   },
   link: {
     type: String,
-    // required: true,
     default: "",
   },
 });
@@ -16,7 +15,8 @@ const { title, link } = props;
 </script>
 
 <template>
-  <h1 class="mb-10 text-2xl font-bold text-sky-600">
+  <h1 class="mb-10 text-2xl font-bold"
+      :class="link ? 'text-sky-600' : 'text-gray-600'">
     <template v-if="link">
       <a :href="link" target="_blank">
         <!-- 官方核心概念示範 -->

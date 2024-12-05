@@ -3,7 +3,7 @@
 <template>
   <div>
     <PageTitle
-      title="客製化自訂樣式"
+      title="對 Tailwind 語法進行練習"
     />
     <PlaygroundFlexboxGrid />
   </div>
