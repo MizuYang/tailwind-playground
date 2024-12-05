@@ -1,12 +1,41 @@
-<script setup></script>
+<script setup>
+const playgroundPagesName = ref([
+  {
+    path: "flex",
+    linkName: "Flex",
+  },
+  {
+    path: "grid",
+    linkName: "Grid",
+  },
+]);
+</script>
 
 <template>
   <div>
-    <PageTitle
-      title="對 Tailwind 語法進行練習"
-    />
-    <PlaygroundFlexboxGrid />
+    <PageTitle title="對 Tailwind 語法進行練習" class="!mb-7" />
+
+    <nav class="mb-5">
+      <ul class="flex flex-wrap">
+        <template v-for="link in playgroundPagesName" :key="link">
+          <li class="me-3">
+            <nuxt-link
+              :to="`/playground/${link.path}`"
+              class="bg-violet-200 px-2 py-1 text-violet-700 transition-all hover:bg-violet-300 active:bg-violet-400/80"
+              active-class="bg-violet-500 text-white hover:bg-violet-500/90 active:bg-violet-500/80"
+            >
+              {{ link.linkName }}
+            </nuxt-link>
+          </li>
+        </template>
+      </ul>
+    </nav>
+
+    <NuxtPage />
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.active {
+}
+</style>

@@ -62,7 +62,7 @@ const menuList = ref([
   </nav>
 </template>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .active {
   color: #475569;
   font-weight: 700;

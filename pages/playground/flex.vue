@@ -7,13 +7,8 @@ const flexBtn = ref([
 ]);
 const flexDirectionClassName = ref(flexBtn.value[0]);
 
-const flexWrapBtn = ref([
-  "flex-wrap",
-  "flex-wrap-reverse",
-  "flex-nowrap",
-]);
+const flexWrapBtn = ref(["flex-wrap", "flex-wrap-reverse", "flex-nowrap"]);
 const flexWraoClassName = ref(flexWrapBtn.value[0]);
-
 </script>
 
 <template>
@@ -33,7 +28,9 @@ const flexWraoClassName = ref(flexWrapBtn.value[0]);
 
         <!-- 彈性方向 -->
         <div class="mb-3">
-          <h3 class="mb-3 text-red-700">flex 彈性方向：{{ flexDirectionClassName }}</h3>
+          <h3 class="mb-3 text-red-700">
+            flex 彈性方向：{{ flexDirectionClassName }}
+          </h3>
 
           <template v-for="btnDirectionName in flexBtn" :key="btnDirectionName">
             <button
@@ -54,9 +51,14 @@ const flexWraoClassName = ref(flexWrapBtn.value[0]);
 
         <!-- 彈性換行 -->
         <div class="mb-3">
-          <h3 class="mb-3 text-red-700">flex 彈性換行：{{ flexWraoClassName }}</h3>
+          <h3 class="mb-3 text-red-700">
+            flex 彈性換行：{{ flexWraoClassName }}
+          </h3>
 
-          <template v-for="btnDirectionName in flexWrapBtn" :key="btnDirectionName">
+          <template
+            v-for="btnDirectionName in flexWrapBtn"
+            :key="btnDirectionName"
+          >
             <button
               type="button"
               class="mb-5 me-2 inline-block bg-gray-300 p-1"
@@ -74,22 +76,6 @@ const flexWraoClassName = ref(flexWrapBtn.value[0]);
         </div>
       </template>
     </SectionContent>
-
-    <!-- <SectionContent title="Grid">
-      <template #content>
-        <h3 class="text-red-700 mb-3">
-          *:w-30 grid grid-cols-3 gap-6 *:h-10 *:bg-sky-300
-        </h3>
-        <ul class="*:w-30 grid grid-cols-3 gap-6 *:h-10 *:bg-sky-300">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </template>
-    </SectionContent> -->
   </div>
 </template>
 
