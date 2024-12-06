@@ -173,6 +173,16 @@ const colEndClass = ref({
             </template>
           </ul>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">grid-rows-*</h3>
+
+          <ul class="grid grid-rows-3 grid-flow-col gap-3">
+            <template v-for="idx in 10" :key="`grid-rows-${idx}`">
+              <li class="box">{{ idx }}</li>
+            </template>
+          </ul>
+        </div>
       </template>
     </SectionContent>
 
