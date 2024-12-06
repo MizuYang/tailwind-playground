@@ -17,6 +17,22 @@ export default {
 
   // important: true, // 將所有樣式設定為 !important
 
+  safelist: [
+    "!col-span-0",
+    "!col-span-1",
+    "!col-span-2",
+    "!col-span-3",
+    "!col-span-4",
+    "!col-span-5",
+    "!col-span-6",
+    "!col-span-7",
+    "!col-span-8",
+    "!col-span-9",
+    "!col-span-10",
+    "!col-span-11",
+    "!col-span-12",
+  ],
+
   theme: {
     extend: {
       screens: {
@@ -29,13 +45,13 @@ export default {
 
       // 自訂顏色
       colors: {
-        "happy": "orange",
-        "unhappy": "grey",
+        happy: "orange",
+        unhappy: "grey",
       },
 
-      spacing : {
-        "mizu-spacing": '87px'
-      }
+      spacing: {
+        "mizu-spacing": "87px",
+      },
     },
 
     // 自訂斷點(會覆蓋掉預設的斷點)
