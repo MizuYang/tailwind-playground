@@ -6,8 +6,7 @@ const clampText = ref(`
   Lorem ipsum dolor sit amet <br />
   consectetur adipisicing elit. <br />
   Molestiae reiciendis possimus <br />
-  esse tenetur magnam,`
-);
+  esse tenetur magnam,`);
 </script>
 
 <template>
@@ -63,6 +62,27 @@ const clampText = ref(`
             <li class="mb-3">
               <h3 class="text-lg">line-clamp-3</h3>
               <p class="line-clamp-3" v-html="clampText"></p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- list-inside | list-outside -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">list-inside</h3>
+          <ul class="list-inside list-disc mb-3">
+            <li>
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Et maxime architecto tempore saepe eaque eius,
+              sint ullam eveniet
+            </li>
+          </ul>
+
+          <h3 class="mb-3 text-red-700">list-outside</h3>
+          <ul class="list-outside list-disc">
+            <li>
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Et maxime architecto tempore saepe eaque eius,
+              sint ullam eveniet
             </li>
           </ul>
         </div>
