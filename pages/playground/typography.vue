@@ -104,6 +104,24 @@ const clampText = ref(`
             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
           </ul>
+
+          <br />
+
+          <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
+          <ul class="list-[upper-roman]">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </ul>
+
+          <br />
+
+          <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
+          <ul class="list-[lower-roman]">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </ul>
         </div>
       </template>
     </SectionContent>
