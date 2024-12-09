@@ -69,7 +69,7 @@ const clampText = ref(`
         <!-- list-inside | list-outside -->
         <div class="mb-3">
           <h3 class="mb-3 text-red-700">list-inside</h3>
-          <ul class="list-inside list-disc mb-3">
+          <ul class="mb-3 list-inside list-disc">
             <li>
               Lorem ipsum dolor sit amet consectetur <br />
               adipisicing elit. Et maxime architecto tempore saepe eaque eius,
@@ -84,6 +84,25 @@ const clampText = ref(`
               adipisicing elit. Et maxime architecto tempore saepe eaque eius,
               sint ullam eveniet
             </li>
+          </ul>
+        </div>
+
+        <!-- list-disc | list-decimal -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">list-disc</h3>
+          <ul class="list-disc">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </ul>
+
+          <br />
+
+          <h3 class="mb-3 text-red-700">list-decimal</h3>
+          <ul class="list-decimal">
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
           </ul>
         </div>
       </template>
