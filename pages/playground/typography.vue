@@ -56,95 +56,114 @@ const listSideClass = computed(
           </ul>
         </div>
 
-        <!-- line-clamp -->
+        <!-- ul 裝飾系列 -->
         <div class="mb-3">
-          <h3 class="mb-3 text-red-700">line-clamp</h3>
-          <ul>
-            <li class="mb-3">
-              <h3 class="text-lg">line-clamp-1</h3>
-              <p class="line-clamp-1" v-html="clampText"></p>
-            </li>
-            <li class="mb-3">
-              <h3 class="text-lg">line-clamp-2</h3>
-              <p class="line-clamp-2" v-html="clampText"></p>
-            </li>
-            <li class="mb-3">
-              <h3 class="text-lg">line-clamp-3</h3>
-              <p class="line-clamp-3" v-html="clampText"></p>
-            </li>
-          </ul>
-        </div>
-
-        <!-- list-inside | list-outside -->
-        <div class="mb-3">
-          <h3 class="mb-3 text-red-700">list-inside</h3>
-          <ul class="mb-3 list-inside list-disc">
-            <li>
-              Lorem ipsum dolor sit amet consectetur <br />
-              adipisicing elit. Et maxime architecto tempore saepe eaque eius,
-              sint ullam eveniet
-            </li>
-          </ul>
-
-          <h3 class="mb-3 text-red-700">list-outside</h3>
-          <ul class="list-outside list-disc">
-            <li>
-              Lorem ipsum dolor sit amet consectetur <br />
-              adipisicing elit. Et maxime architecto tempore saepe eaque eius,
-              sint ullam eveniet
-            </li>
-          </ul>
-        </div>
-
-        <div class="border-sky-300 border-y-2 py-4">
-          <div class="mb-2">
-            <button
-              type="button"
-              class="bg-purple-500 p-1"
-              @click="currentSideStyle = 'listOutside'"
-            >
-              outside
-            </button>
-            <button
-              type="button"
-              class="bg-violet-300 p-1"
-              @click="currentSideStyle = 'listInside'"
-            >
-              inside
-            </button>
-            =>
-            {{ listSideClass }}
-          </div>
-          
-          <!-- list-disc | list-decimal | list-[upper-roman] | list-[lower-roman] -->
+          <!-- line-clamp -->
           <div class="mb-3">
-            <h3 class="mb-3 text-red-700">list-disc</h3>
-            <ul class="list-disc" :class="listSideClass">
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <h3 class="mb-3 text-red-700">line-clamp</h3>
+            <ul>
+              <li class="mb-3">
+                <h3 class="text-lg">line-clamp-1</h3>
+                <p class="line-clamp-1" v-html="clampText"></p>
+              </li>
+              <li class="mb-3">
+                <h3 class="text-lg">line-clamp-2</h3>
+                <p class="line-clamp-2" v-html="clampText"></p>
+              </li>
+              <li class="mb-3">
+                <h3 class="text-lg">line-clamp-3</h3>
+                <p class="line-clamp-3" v-html="clampText"></p>
+              </li>
             </ul>
-            <br />
-            <h3 class="mb-3 text-red-700">list-decimal</h3>
-            <ul class="list-decimal" :class="listSideClass">
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </div>
+          <!-- list-inside | list-outside -->
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">list-inside</h3>
+            <ul class="mb-3 list-inside list-disc">
+              <li>
+                Lorem ipsum dolor sit amet consectetur <br />
+                adipisicing elit. Et maxime architecto tempore saepe eaque eius,
+                sint ullam eveniet
+              </li>
             </ul>
-            <br />
-            <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
-            <ul class="list-[upper-roman]" :class="listSideClass">
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <h3 class="mb-3 text-red-700">list-outside</h3>
+            <ul class="list-outside list-disc">
+              <li>
+                Lorem ipsum dolor sit amet consectetur <br />
+                adipisicing elit. Et maxime architecto tempore saepe eaque eius,
+                sint ullam eveniet
+              </li>
             </ul>
-            <br />
-            <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
-            <ul class="list-[lower-roman]" :class="listSideClass">
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            </ul>
+          </div>
+          <div class="border-sky-300 border-y-2 py-4">
+            <div class="mb-2">
+              <button
+                type="button"
+                class="bg-purple-500 p-1"
+                @click="currentSideStyle = 'listOutside'"
+              >
+                outside
+              </button>
+              <button
+                type="button"
+                class="bg-violet-300 p-1"
+                @click="currentSideStyle = 'listInside'"
+              >
+                inside
+              </button>
+              =>
+              {{ listSideClass }}
+            </div>
+          
+            <!-- list-disc | list-decimal | list-[upper-roman] | list-[lower-roman] -->
+            <div class="mb-3">
+              <h3 class="mb-3 text-red-700">list-disc</h3>
+              <ul class="list-disc" :class="listSideClass">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              </ul>
+              <br />
+              <h3 class="mb-3 text-red-700">list-decimal</h3>
+              <ul class="list-decimal" :class="listSideClass">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              </ul>
+              <br />
+              <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
+              <ul class="list-[upper-roman]" :class="listSideClass">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              </ul>
+              <br />
+              <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
+              <ul class="list-[lower-roman]" :class="listSideClass">
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 文字裝飾系列 -->
+        <div class="mb-3">
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">overline | line-through | underline</h3>
+            <p>
+              overline：
+              <span class="overline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </p>
+            <p>
+              line-through：
+              <span class="line-through">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </p>
+            <p>
+              underline：
+              <span class="underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </p>
           </div>
         </div>
       </template>
