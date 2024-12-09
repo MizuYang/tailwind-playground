@@ -18,8 +18,11 @@ const playgroundPagesName = ref([
     path: "grid",
     linkName: "Grid",
   },
+  {
+    path: "typography",
+    linkName: "Typography",
+  },
 ]);
-
 </script>
 
 <template>
