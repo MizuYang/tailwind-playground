@@ -258,6 +258,18 @@ const listSideClass = computed(
             </p>
           </div>
         </div>
+
+        <!-- 文字溢出 -->
+        <div class="mb-3">
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">
+              truncate 文字截短
+            </h3>
+            <p class="max-w-40 truncate">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            </p>
+          </div>
+        </div>
       </template>
     </SectionContent>
   </div>
