@@ -47,6 +47,25 @@ const clampText = ref(`
             </li>
           </ul>
         </div>
+
+        <!-- line-clamp -->
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">line-clamp</h3>
+          <ul>
+            <li class="mb-3">
+              <h3 class="text-lg">line-clamp-1</h3>
+              <p class="line-clamp-1" v-html="clampText"></p>
+            </li>
+            <li class="mb-3">
+              <h3 class="text-lg">line-clamp-2</h3>
+              <p class="line-clamp-2" v-html="clampText"></p>
+            </li>
+            <li class="mb-3">
+              <h3 class="text-lg">line-clamp-3</h3>
+              <p class="line-clamp-3" v-html="clampText"></p>
+            </li>
+          </ul>
+        </div>
       </template>
     </SectionContent>
   </div>
