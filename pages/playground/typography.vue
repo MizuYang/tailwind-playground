@@ -7,6 +7,15 @@ const clampText = ref(`
   consectetur adipisicing elit. <br />
   Molestiae reiciendis possimus <br />
   esse tenetur magnam,`);
+
+const listSideStyle = ref({
+  listInside: "list-inside",
+  listOutside: "list-outside",
+});
+const currentSideStyle = ref("listOutside");
+const listSideClass = computed(
+  () => listSideStyle.value[currentSideStyle.value],
+);
 </script>
 
 <template>
@@ -87,41 +96,56 @@ const clampText = ref(`
           </ul>
         </div>
 
-        <!-- list-disc | list-decimal -->
-        <div class="mb-3">
-          <h3 class="mb-3 text-red-700">list-disc</h3>
-          <ul class="list-disc">
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-          </ul>
-
-          <br />
-
-          <h3 class="mb-3 text-red-700">list-decimal</h3>
-          <ul class="list-decimal">
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-          </ul>
-
-          <br />
-
-          <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
-          <ul class="list-[upper-roman]">
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-          </ul>
-
-          <br />
-
-          <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
-          <ul class="list-[lower-roman]">
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-          </ul>
+        <div class="border-sky-300 border-y-2 py-4">
+          <div class="mb-2">
+            <button
+              type="button"
+              class="bg-purple-500 p-1"
+              @click="currentSideStyle = 'listOutside'"
+            >
+              outside
+            </button>
+            <button
+              type="button"
+              class="bg-violet-300 p-1"
+              @click="currentSideStyle = 'listInside'"
+            >
+              inside
+            </button>
+            =>
+            {{ listSideClass }}
+          </div>
+          
+          <!-- list-disc | list-decimal | list-[upper-roman] | list-[lower-roman] -->
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">list-disc</h3>
+            <ul class="list-disc" :class="listSideClass">
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+            <br />
+            <h3 class="mb-3 text-red-700">list-decimal</h3>
+            <ul class="list-decimal" :class="listSideClass">
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+            <br />
+            <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
+            <ul class="list-[upper-roman]" :class="listSideClass">
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+            <br />
+            <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
+            <ul class="list-[lower-roman]" :class="listSideClass">
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            </ul>
+          </div>
         </div>
       </template>
     </SectionContent>
