@@ -95,7 +95,7 @@ const listSideClass = computed(
               </li>
             </ul>
           </div>
-          <div class="border-sky-300 border-y-2 py-4">
+          <div class="border-y-2 border-sky-300 py-4">
             <div class="mb-2">
               <button
                 type="button"
@@ -114,35 +114,63 @@ const listSideClass = computed(
               =>
               {{ listSideClass }}
             </div>
-          
+
             <!-- list-disc | list-decimal | list-[upper-roman] | list-[lower-roman] -->
             <div class="mb-3">
               <h3 class="mb-3 text-red-700">list-disc</h3>
               <ul class="list-disc" :class="listSideClass">
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
               </ul>
               <br />
               <h3 class="mb-3 text-red-700">list-decimal</h3>
               <ul class="list-decimal" :class="listSideClass">
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
               </ul>
               <br />
-              <h3 class="mb-3 text-red-700">list-[upper-roman] - 大寫羅馬數字</h3>
+              <h3 class="mb-3 text-red-700">
+                list-[upper-roman] - 大寫羅馬數字
+              </h3>
               <ul class="list-[upper-roman]" :class="listSideClass">
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
               </ul>
               <br />
-              <h3 class="mb-3 text-red-700">list-[lower-roman] - 小寫羅馬數字</h3>
+              <h3 class="mb-3 text-red-700">
+                list-[lower-roman] - 小寫羅馬數字
+              </h3>
               <ul class="list-[lower-roman]" :class="listSideClass">
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </li>
               </ul>
             </div>
           </div>
@@ -151,18 +179,82 @@ const listSideClass = computed(
         <!-- 文字裝飾系列 -->
         <div class="mb-3">
           <div class="mb-3">
-            <h3 class="mb-3 text-red-700">overline | line-through | underline</h3>
+            <h3 class="mb-3 text-red-700">
+              overline | line-through | underline
+            </h3>
             <p>
               overline：
-              <span class="overline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span class="overline"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
             </p>
             <p>
               line-through：
-              <span class="line-through">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span class="line-through"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
             </p>
             <p>
               underline：
-              <span class="underline">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+              <span class="underline"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
+            </p>
+          </div>
+
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">decoration-* 裝飾顏色</h3>
+            <p>
+              overline decoration-yellow-400：
+              <span class="overline decoration-yellow-400"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
+            </p>
+            <p>
+              line-through decoration-green-400：
+              <span class="line-through decoration-green-400"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
+            </p>
+            <p>
+              underline decoration-red-400：
+              <span class="underline decoration-red-400"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
+            </p>
+          </div>
+
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">decoration-* 裝飾樣式</h3>
+            <p class="mb-1">
+              underline decoration-solid：
+              <span class="underline decoration-solid"
+                >The quick brown fox...</span
+              >
+            </p>
+            <p class="mb-1">
+              underline decoration-double：
+              <span class="underline decoration-double"
+                >The quick brown fox...</span
+              >
+            </p>
+            <p class="mb-1">
+              underline decoration-dotted：
+              <span class="underline decoration-dotted"
+                >The quick brown fox...</span
+              >
+            </p>
+            <p class="mb-1">
+              underline decoration-dashed：
+              <span class="underline decoration-dashed"
+                >The quick brown fox...</span
+              >
+            </p>
+            <p class="mb-1">
+              underline decoration-wavy：
+              <span class="underline decoration-wavy"
+                >The quick brown fox...</span
+              >
             </p>
           </div>
         </div>
