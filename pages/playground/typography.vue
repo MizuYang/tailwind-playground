@@ -16,6 +16,14 @@ const currentSideStyle = ref("listOutside");
 const listSideClass = computed(
   () => listSideStyle.value[currentSideStyle.value],
 );
+
+const textWrapClassList = ref({
+  "text-wrap": "text-wrap",
+  "text-nowrap": "text-nowrap",
+  "text-balance": "text-balance",
+  "text-pretty": "text-pretty",
+})
+const curWrapClass = ref("text-wrap")
 </script>
 
 <template>
@@ -262,10 +270,29 @@ const listSideClass = computed(
         <!-- 文字溢出 -->
         <div class="mb-3">
           <div class="mb-3">
-            <h3 class="mb-3 text-red-700">
-              truncate 文字截短
-            </h3>
+            <h3 class="mb-3 text-red-700">truncate 文字截短</h3>
             <p class="max-w-40 truncate">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+            </p>
+          </div>
+        </div>
+
+        <!-- 文字溢出 -->
+        <div class="mb-3">
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">truncate 文字換行</h3>
+
+            <div class="mb-3">
+              <template v-for="className in textWrapClassList" :key="`text-wrap-${className}`">
+                <button type="button" class="bg-violet-200 me-3 p-1" :class="className === curWrapClass&&'bg-violet-400'" @click="curWrapClass=className">
+                  {{ className }}
+                </button>
+              </template>
+              => 
+              {{  textWrapClassList[curWrapClass]  }}
+            </div>
+
+            <p class="max-w-40 overflow-auto" :class="textWrapClassList[curWrapClass]">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
             </p>
           </div>
