@@ -9,7 +9,7 @@ definePageMeta({
     <SectionContent title="Typography">
       <template #content>
         <div class="mb-3">
-          <h3 class="mb-3 text-red-700">background</h3>
+          <h3 class="mb-3 text-red-700">background 語法</h3>
 
           <div class="mx-auto max-w-[1000px]">
             <div
@@ -59,6 +59,14 @@ definePageMeta({
                 </span>
               </p>
             </article>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">background-image: linear-gradient</h3>
+          <div class="mb-3">
+            <h4 class="mb-1">漸層方向 + 起始漸層顏色 + 結束漸層顏色 bg-gradient-to-tr from-sky-700 to-violet-200</h4>
+            <div class="w-full h-10 bg-gradient-to-tr from-sky-700 to-violet-200"></div>
           </div>
         </div>
       </template>
