@@ -68,6 +68,11 @@ definePageMeta({
             <h4 class="mb-1">漸層方向 + 起始漸層顏色 + 結束漸層顏色 bg-gradient-to-tr from-sky-700 to-violet-200</h4>
             <div class="w-full h-10 bg-gradient-to-tr from-sky-700 to-violet-200"></div>
           </div>
+
+          <div class="mb-3">
+            <h4 class="mb-1">中間色 via-purple-500</h4>
+            <div class="w-full h-10 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500"></div>
+          </div>
         </div>
       </template>
     </SectionContent>
