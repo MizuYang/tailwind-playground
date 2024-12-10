@@ -22,8 +22,8 @@ const textWrapClassList = ref({
   "text-nowrap": "text-nowrap",
   "text-balance": "text-balance",
   "text-pretty": "text-pretty",
-})
-const curWrapClass = ref("text-wrap")
+});
+const curWrapClass = ref("text-wrap");
 </script>
 
 <template>
@@ -283,18 +283,49 @@ const curWrapClass = ref("text-wrap")
             <h3 class="mb-3 text-red-700">truncate 文字換行</h3>
 
             <div class="mb-3">
-              <template v-for="className in textWrapClassList" :key="`text-wrap-${className}`">
-                <button type="button" class="bg-violet-200 me-3 p-1" :class="className === curWrapClass&&'bg-violet-400'" @click="curWrapClass=className">
+              <template
+                v-for="className in textWrapClassList"
+                :key="`text-wrap-${className}`"
+              >
+                <button
+                  type="button"
+                  class="me-3 bg-violet-200 p-1"
+                  :class="className === curWrapClass && 'bg-violet-400'"
+                  @click="curWrapClass = className"
+                >
                   {{ className }}
                 </button>
               </template>
-              => 
-              {{  textWrapClassList[curWrapClass]  }}
+              =>
+              {{ textWrapClassList[curWrapClass] }}
             </div>
 
-            <p class="max-w-40 overflow-auto" :class="textWrapClassList[curWrapClass]">
+            <p
+              class="max-w-40 overflow-auto"
+              :class="textWrapClassList[curWrapClass]"
+            >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
             </p>
+          </div>
+        </div>
+
+        <!-- 偽元素 content -->
+        <div class="mb-3">
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">偽元素 content</h3>
+            <div
+              data-before="be"
+              data-after="af"
+              class="before:content-[attr(data-before)] after:content-[attr(data-after)]"
+            >
+              文本內容
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h3 class="mb-3 text-red-700">before:clear-both before:block - 使用偽元素來清除浮動</h3>
+            <img src='http://placehold.it/50x50/000/fff/?text=xDDDD' class="float-left">
+            <p class="before:clear-both before:block">使用偽元素來清除浮動</p>
           </div>
         </div>
       </template>
