@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  title: "Typography",
+  title: "排版",
 });
 const clampText = ref(`
   Lorem ipsum dolor sit amet <br />

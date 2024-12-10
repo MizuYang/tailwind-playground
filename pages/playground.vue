@@ -20,7 +20,11 @@ const playgroundPagesName = ref([
   },
   {
     path: "typography",
-    linkName: "Typography",
+    linkName: "排版",
+  },
+  {
+    path: "backgrounds",
+    linkName: "Backgrounds",
   },
 ]);
 </script>
@@ -49,7 +53,4 @@ const playgroundPagesName = ref([
   </div>
 </template>
 
-<style lang="scss" scoped>
-.active {
-}
-</style>
+<style lang="scss" scoped></style>

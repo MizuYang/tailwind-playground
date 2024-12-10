@@ -1,0 +1,130 @@
+<script setup>
+definePageMeta({
+  title: "背景色",
+});
+</script>
+
+<template>
+  <div>
+    <SectionContent title="Typography">
+      <template #content>
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">background</h3>
+
+          <div class="mx-auto max-w-[1000px]">
+            <div
+              class="h-[400px] w-full bg-fixed bg-center bg-no-repeat"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=666&q=80&quot;);
+              "
+            ></div>
+
+            <article class="w-full bg-gray-300/50 px-16 py-10">
+              <h2 class="text-5xl font-extrabold">
+                <span
+                  class="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent"
+                >
+                  Hello world
+                </span>
+              </h2>
+              <p
+                class="relative text-lg before:absolute before:top-0 before:block before:h-3 before:w-full before:translate-y-3 before:skew-x-[130deg] before:bg-red-300/30"
+              >
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                asperiores corporis, quia sit voluptates tenetur ut cum quam,
+                exercitationem molestias impedit vero ipsa. Dignissimos corporis
+                optio laudantium suscipit. Adipisci, in? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Minima omnis quo harum quis,
+                adipisci temporibus nam, eum reiciendis obcaecati perspiciatis
+                itaque nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Minima omnis quo harum
+                quis, adipisci temporibus nam, eum reiciendis obcaecati
+                perspiciatis itaque nihil veritatis doloribus ex sed dolore ad.
+                Sequi, quisquam.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minima omnis quo harum quis, adipisci
+                temporibus nam, eum reiciendis obcaecati perspiciatis itaque
+                nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam. Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Dicta asperiores
+                corporis, quia sit voluptates tenetur ut cum quam,
+                exercitationem molestias impedit vero ipsa. Dignissimos corporis
+                optio laudantium suscipit. Adipisci, in? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Minima omnis quo harum quis,
+                adipisci temporibus nam, eum reiciendis obcaecati perspiciatis
+                itaque nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Minima omnis quo harum
+                quis, adipisci temporibus nam, eum reiciendis obcaecati
+                perspiciatis itaque nihil veritatis doloribus ex sed dolore ad.
+                Sequi, quisquam.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minima omnis quo harum quis, adipisci
+                temporibus nam, eum reiciendis obcaecati perspiciatis itaque
+                nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam. Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Dicta asperiores
+                corporis, quia sit voluptates tenetur ut cum quam,
+                exercitationem molestias impedit vero ipsa. Dignissimos corporis
+                optio laudantium suscipit. Adipisci, in? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Minima omnis quo harum quis,
+                adipisci temporibus nam, eum reiciendis obcaecati perspiciatis
+                itaque nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Minima omnis quo harum
+                quis, adipisci temporibus nam, eum reiciendis obcaecati
+                perspiciatis itaque nihil veritatis doloribus ex sed dolore ad.
+                Sequi, quisquam.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minima omnis quo harum quis, adipisci
+                temporibus nam, eum reiciendis obcaecati perspiciatis itaque
+                nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam. Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Dicta asperiores
+                corporis, quia sit voluptates tenetur ut cum quam,
+                exercitationem molestias impedit vero ipsa. Dignissimos corporis
+                optio laudantium suscipit. Adipisci, in? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Minima omnis quo harum quis,
+                adipisci temporibus nam, eum reiciendis obcaecati perspiciatis
+                itaque nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam.Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Minima omnis quo harum
+                quis, adipisci temporibus nam, eum reiciendis obcaecati
+                perspiciatis itaque nihil veritatis doloribus ex sed dolore ad.
+                Sequi, quisquam.Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Minima omnis quo harum quis, adipisci
+                temporibus nam, eum reiciendis obcaecati perspiciatis itaque
+                nihil veritatis doloribus ex sed dolore ad. Sequi,
+                quisquam.Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Minima omnis quo harum quis, adipisci temporibus nam, eum
+                reiciendis obcaecati perspiciatis itaque nihil veritatis
+                doloribus ex sed dolore ad. Sequi, quisquam.
+              </p>
+            </article>
+          </div>
+        </div>
+      </template>
+    </SectionContent>
+  </div>
+</template>
+
+<style lang="scss" scoped></style>

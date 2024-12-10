@@ -41,7 +41,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <nav class="sticky top-0 w-full bg-sky-200 px-10">
+  <nav class="sticky top-0 z-50 w-full bg-sky-200 px-10">
     <ul class="relative flex items-center">
       <template v-for="menu in menuList" :key="menu.name">
         <li
