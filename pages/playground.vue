@@ -26,6 +26,10 @@ const playgroundPagesName = ref([
     path: "backgrounds",
     linkName: "Backgrounds",
   },
+  {
+    path: "effects",
+    linkName: "Effects",
+  },
 ]);
 </script>
 
