@@ -47,6 +47,17 @@
             <img src='https://picsum.photos/100/100' class="hue-rotate-90" title="hue-rotate-90" />
           </div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">saturate-* 飽和度</h3>
+
+          <div class="flex gap-x-8">
+            <img src='https://picsum.photos/100/100' class="saturate-50" title="saturate-50" />
+            <img src='https://picsum.photos/100/100' class="saturate-100" title="saturate-100" />
+            <img src='https://picsum.photos/100/100' class="saturate-150" title="saturate-150" />
+            <img src='https://picsum.photos/100/100' class="saturate-200" title="saturate-200" />
+          </div>
+        </div>
       </template>
     </SectionContent>
   </div>
