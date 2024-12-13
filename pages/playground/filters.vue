@@ -25,6 +25,17 @@
             <img src='https://picsum.photos/100/100' class="brightness-150" />
           </div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">contrast-* 對比</h3>
+
+          <div class="flex gap-x-8">
+            <img src='https://picsum.photos/100/100' class="contrast-50" />
+            <img src='https://picsum.photos/100/100' class="contrast-100" />
+            <img src='https://picsum.photos/100/100' class="contrast-125" />
+            <img src='https://picsum.photos/100/100' class="contrast-150" />
+          </div>
+        </div>
       </template>
     </SectionContent>
   </div>
