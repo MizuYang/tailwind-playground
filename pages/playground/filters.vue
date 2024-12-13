@@ -58,6 +58,25 @@
             <img src='https://picsum.photos/100/100' class="saturate-200" title="saturate-200" />
           </div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">backdrop-blur-* 背景模糊</h3>
+
+          <div class="flex gap-x-8">
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-blur-[2px]" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-blur-[2px]"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-blur-sm" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-blur-sm"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-blur" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-blur"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-blur-md" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-blur-md"></span>
+            </div>
+          </div>
+        </div>
       </template>
     </SectionContent>
   </div>
