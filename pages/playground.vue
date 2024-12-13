@@ -28,7 +28,11 @@ const playgroundPagesName = ref([
   },
   {
     path: "effects",
-    linkName: "Effects",
+    linkName: "效果",
+  },
+  {
+    path: "filters",
+    linkName: "濾鏡",
   },
 ]);
 </script>
