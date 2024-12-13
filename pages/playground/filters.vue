@@ -96,6 +96,25 @@
             </div>
           </div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">backdrop-contrast-* 背景對比</h3>
+
+          <div class="flex gap-x-8">
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-contrast-50" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-contrast-50"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-contrast-125" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-contrast-125"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-contrast-200" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-contrast-200"></span>
+            </div>
+            <div class="relative size-[100px] bg-cover bg-no-repeat" title="backdrop-contrast-[2.5]" style="background-image: url('https://picsum.photos/100/100');">
+              <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-16 rounded-full bg-transparent backdrop-contrast-[2.5]"></span>
+            </div>
+          </div>
+        </div>
       </template>
     </SectionContent>
   </div>
