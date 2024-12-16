@@ -34,6 +34,10 @@ const playgroundPagesName = ref([
     path: "filters",
     linkName: "濾鏡",
   },
+  {
+    path: "table",
+    linkName: "表格",
+  },
 ]);
 </script>
 
