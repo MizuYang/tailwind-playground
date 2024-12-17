@@ -24,6 +24,13 @@
             class="size-10 bg-red-400 shadow-md shadow-violet-600 transition-shadow hover:shadow-xl hover:shadow-sky-600"
           ></div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">transition-transform</h3>
+          <div
+            class="size-10 bg-red-400 shadow-md transition-transform hover:translate-x-5"
+          ></div>
+        </div>
       </template>
     </SectionContent>
   </div>
