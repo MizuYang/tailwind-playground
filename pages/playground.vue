@@ -38,6 +38,10 @@ const playgroundPagesName = ref([
     path: "table",
     linkName: "表格",
   },
+  {
+    path: "transitionsAndAnimation",
+    linkName: "轉場、動畫",
+  },
 ]);
 </script>
 
