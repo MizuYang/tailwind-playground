@@ -45,6 +45,13 @@
             class="size-10 bg-red-400 transition-all duration-700 hover:translate-x-5 hover:rotate-45 hover:rounded-lg hover:bg-violet-500 hover:opacity-70 hover:shadow-xl hover:shadow-yellow-700"
           ></div>
         </div>
+
+        <div class="mb-3">
+          <h3 class="mb-3 text-red-700">delay-*</h3>
+          <div
+            class="size-10 bg-red-400 transition-all delay-300 duration-700 hover:translate-x-5 hover:rotate-45 hover:rounded-lg hover:bg-violet-500 hover:opacity-70 hover:shadow-xl hover:shadow-yellow-700"
+          ></div>
+        </div>
       </template>
     </SectionContent>
   </div>
