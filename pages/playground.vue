@@ -42,6 +42,10 @@ const playgroundPagesName = ref([
     path: "transitionsAndAnimation",
     linkName: "轉場、動畫",
   },
+  {
+    path: "interactivity",
+    linkName: "交互",
+  },
 ]);
 </script>
 
